@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Evaluation</title>
+        <style>
+            .grandfather{
+                display: flex;
+                flex-direction: row;
+                height: 780px;
+                width: 1200px;
+                border: 1px dotted black;
+                margin: 3%;
+            }
+            .text{
+                font-size: 15px;
+            }
+            .father{
+                height: 700px;
+                width: 850px;
+                border: 1px dotted blue;
+                margin: 2%;
+                padding-left: 2%;
+                padding-bottom: 2%;
+
+            }
+            .personF{
+                display: flex;
+                flex-direction: row;
+                height: 640px;
+                width: 400px;
+                border: 1px dotted black;
+                justify-content: space-evenly;
+                padding-top: 2%;
+                margin: 2%;
+            }
+            .childrenF{
+                height: 600px;
+                width: 80px;
+                border: 1px solid blue;
+                margin: 2%;
+                padding-left: 2%;
+            }
+            .children-3{
+                display: flex;
+                flex-direction: column;
+                padding-left: 2%;
+            }
+            .grandChild{
+                height: 60px;
+                width: 40px;
+                border: 1px dotted black;
+                margin: 4%;
+            }
+            .content{
+                font-size: 40px;
+                text-align: center;
+            }
+            .uncle{
+                display: flex;
+                flex-direction: column;
+                height: 700px;
+                width: 600px;
+                border: 1px dotted blue;
+                padding: 1%;
+                margin-top: 2%;
+                margin-right: 1%;
+            }
+            .person{
+                height: 50px;
+                width: 600px;
+                border: 1px dotted black;
+                margin: 1%;
+            }
+            .person2{
+                height: 600px;
+                width: 600px;
+            }
+            .children{
+                height: 50px;
+                width: 585px;
+                border: 1px solid blue;
+                margin: 1%;
+            }
+            .children2{
+                height: 300px;
+                width: 585px;
+            }
+            .grandchildUn{
+                height:50px;
+                width: 560px;
+                border: 1px dotted black;
+                margin: 2%;
+            }
+            .text1{
+                font-size: 40px;
+                text-align: center;
+            }
+            .text2{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="grandfather">
+            <p class="text">Grandfather</p>
+            <div class="father">
+                <p class="text">Father</p>
+                <div class="personF">
+                    <p class="text">Person-1</p>
+                    <div class="childrenF">
+                        <p class="text">Child-1</p>
+                    </div>
+                    <div class="childrenF">
+                        <p class="text">Child-2</p>
+                    </div>
+                    <div class="childrenF children-3">
+                        <p class="text">Child-3</p>
+                        <div class="grandChild content">1</div>
+                        <div class="grandChild content">2</div>
+                        <div class="grandChild content">3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="uncle">
+                <p class="text text2">Uncle</p>
+                <div class="person">
+                    <p class="text text2">Person-1</p>
+                </div>
+                <div class="person person2">
+                    <p class="text text2">Person-2</p>
+                    <div class="children">
+                        <p class="text text2">Children-1</p>
+                    </div>
+                    <div class="children children2">
+                        <p class="text text2">Children-2</p>
+                        <div class="grandchildUn text1" style="background-color: orange;">1</div>
+                        <div class="grandchildUn text1">2</div>
+                        <div class="grandchildUn text1" style="background-color: green;">3</div>
+                    </div>
+                    <div class="children">
+                        <p class="text text2">Children-3</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <p class="text text2">Person-3</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
